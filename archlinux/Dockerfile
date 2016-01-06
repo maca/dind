@@ -2,7 +2,7 @@ FROM logankoester/archlinux
 MAINTAINER logan@logankoester.com
 
 # Install Docker from Arch repos
-RUN pacman -S --noprogressbar --noconfirm --needed ca-certificates lxc e2fsprogs docker
+RUN pacman -S --noprogressbar --noconfirm --needed ca-certificates lxc e2fsprogs docker docker-compose
 
 # Install the magic wrapper.
 ADD ./wrapdocker /usr/local/bin/wrapdocker
